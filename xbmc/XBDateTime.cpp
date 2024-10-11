@@ -44,6 +44,8 @@ CDateTimeSpan::CDateTimeSpan(const CDateTimeSpan& span)
 
 CDateTimeSpan::CDateTimeSpan(int day, int hour, int minute, int second)
 {
+  m_timeSpan.highDateTime = 0;
+  m_timeSpan.lowDateTime = 0;
   SetDateTimeSpan(day, hour, minute, second);
 }
 
